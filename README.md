@@ -9,8 +9,10 @@ A Chrome extension for converting currency, length, mass and temperature.
 
 ## Description
 
-This is an old extension that I've decided to make source available. The frontend code was last altered on the 20th of May 2023.
+This is an extension of mine that I've decided to make source-available. The frontend code was last altered on May 20, 2023.
 
 Get the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/conversion-duck/gmmmfkfijagbmdcnbmfiehhdcpioipmm).
 
-The extension gets hourly updated currency rates from my API. The current backend in production uses a serverless architecture with AWS instead of the Express server, but works very similarly still.
+The extension works offline, but when online, it gets new currency rates from my API. The API gets updated rates every hour.
+
+This source-available repo uses a simple Express server that I used to host on a server. Nowadays, in production, the backend uses a serverless architecture, but it still works very similarly. First, it used to be hosted on AWS using Lambda, S3 and CloudFront. However, now it's running on Cloudflare Workers and D1.
