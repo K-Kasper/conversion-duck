@@ -15,4 +15,4 @@ Get the extension from the [Chrome Web Store](https://chromewebstore.google.com/
 
 The extension works offline, but when online, it gets new currency rates from my API. The API gets updated rates every hour.
 
-This source-available repo uses a simple Express server that I used to host on a server. Nowadays, in production, the backend uses a serverless architecture, but it still works very similarly. First, it used to be hosted on AWS using Lambda, S3 and CloudFront. However, now it's running on Cloudflare Workers and D1.
+This source-available repo includes a simple Express server I originally used for hosting. In production, the backend now uses a serverless architecture on AWS (Lambda, S3, and CloudFront), but functions similarly.
